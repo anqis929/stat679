@@ -4,4 +4,3 @@ normalizeFileNames is the code used for hw1 exercise1.
 summarizeSNaQres is the code used for hw1 exercise2.
 
 grep is used to extract information from files
-1111111111
