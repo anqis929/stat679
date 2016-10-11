@@ -4,9 +4,9 @@ echo analysis, h, CPUtime, Nruns, Nfail, fabs, frel, xabs, xrel, seed, under3460
 for filename in log/*.log
 do
   analysis=`grep rootname $filename | cut -f 2 -d ':'`
-  roots="${filename%.*}" #extract roots
-  roots="${roots##*/}"  #get rid of "log/" in the front of roots
-  outname="${roots}.out" #set roots name for *.out files
+  basenames="${filename%.*}" #extract roots
+  basename="${basename##*/}"  #get rid of "log/" in the front of roots
+  outname="${basename}.out" #set roots name for *.out files
   #grep hmax time
   h=`grep hmax $filename | head -n 1 | cut -f 2 -d '=' `
 #grep CPU time
